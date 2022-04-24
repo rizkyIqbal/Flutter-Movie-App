@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_movie_app/constants.dart';
-// import 'package:flutter_movie_app/screens/home/HomeScreen.dart';
+import 'package:flutter_movie_app/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,10 +38,7 @@ class _NavigationBar extends State<NavigationBar> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
+    HomeScreen(),
     Text(
       'Index 2: Business',
       style: optionStyle,
